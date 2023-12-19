@@ -28,6 +28,8 @@ I committed straight to main with very clear commit messages and history
 
 Code source can be found in script.js
 
+## After thoughts
+
 ## Installation
 
 The challenge is deployed using Github Pages. The end result can be found here: https://reginaabena19.github.io/Password-Generator/ When viewing through the editor ensure live server is installed in order to run the index.html file in the browswer.
