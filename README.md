@@ -29,14 +29,14 @@ I committed straight to main with very clear commit messages and history
 Code source can be found in script.js
 
 ## Implementation
-4 Arrays of special, numeric, lowercase and uppercase characters to be included in password
-Function to obtain user input on desired password length
-Function to prompt user for password options
-Function for getting a random element from an array
-Function to generate password with user input
-Get references to the #generate element
-Write password to the #password input
-Add event listener to generate button
+* 4 Arrays of special, numeric, lowercase and uppercase characters to be included in password
+* Function to obtain user input on desired password length
+* Function to prompt user for password options
+* Function for getting a random element from an array
+* Function to generate password with user input
+* Get references to the #generate element
+* Write password to the #password input
+* Add event listener to generate button
 
 ## After thoughts
   
