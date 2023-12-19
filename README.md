@@ -28,6 +28,16 @@ I committed straight to main with very clear commit messages and history
 
 Code source can be found in script.js
 
+## Implementation
+4 Arrays of special, numeric, lowercase and uppercase characters to be included in password
+Function to obtain user input on desired password length
+Function to prompt user for password options
+Function for getting a random element from an array
+Function to generate password with user input
+Get references to the #generate element
+Write password to the #password input
+Add event listener to generate button
+
 ## After thoughts
   
 * In the initial implementation, if a user entered a desired password length < 8 or > 128, the user would still be presented with additional options. However, the password generation would inevitably fail since the initial condition was not met. From a user usability standpoint, this approach lacks clarity as users are left in the dark about what went wrong and why a password was not generated. A more user-friendly approach would be to immediately notify users of the incorrect password length and guide them to provide a valid input, fostering a smoother and more transparent user experience.
