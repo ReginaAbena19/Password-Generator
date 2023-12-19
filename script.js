@@ -124,7 +124,6 @@ function getRandom(arr) {
   return arr[randomElementIndex];
 }
 
-
 function generatePassword() {
   const options = getPasswordOptions();
 
@@ -148,11 +147,11 @@ function generatePassword() {
   return password;
 }
 
-var generateBtn = document.querySelector('#generate');
+let generateBtn = document.querySelector('#generate');
 
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector('#password');
+  let password = generatePassword();
+  let passwordText = document.querySelector('#password');
 
   passwordText.value = password;
 }
