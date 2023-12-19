@@ -92,10 +92,13 @@ function passwordLength() {
   let lengthOfPassword = parseInt(prompt("Please enter the desired characters for your password between 8 - 128"));
 
   if (isNaN(lengthOfPassword) || lengthOfPassword < 8 || lengthOfPassword > 128) {
-    return null;
+    alert("Incorrect number of characters requested, please try again");
+    return passwordLength();
   }
-  return lengthOfPassword;
+  return lengthOfPassword
 }
+
+
 
 // Function to prompt user for password options
 function getPasswordOptions() {

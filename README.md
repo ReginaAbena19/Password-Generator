@@ -29,6 +29,23 @@ I committed straight to main with very clear commit messages and history
 Code source can be found in script.js
 
 ## After thoughts
+  
+* In the initial implementation, if a user entered a desired password length < 8 or > 128, the user would still be presented with additional options. However, the password generation would inevitably fail since the initial condition was not met. From a user usability standpoint, this approach lacks clarity as users are left in the dark about what went wrong and why a password was not generated. A more user-friendly approach would be to immediately notify users of the incorrect password length and guide them to provide a valid input, fostering a smoother and more transparent user experience.
+
+// function passwordLength() {
+//   let lengthOfPassword = parseInt(prompt("Please enter the desired characters for your password between 8 - 128"));
+
+//   if (isNaN(lengthOfPassword) || lengthOfPassword < 8 || lengthOfPassword > 128) {
+//     return null;
+//   }
+//   return lengthOfPassword;
+// }
+
+
+* Hence, a recursive call was incorporated into the `passwordLength` function. In the event of an invalid input, where the condition (< 8 or > 128) is not met, the function calls itself and issues an alert with an error message. This enhancement ensures that the user is prompted repeatedly until a valid password length is provided, offering a more intuitive and responsive user experience.
+
+* Given more time, I would have refactored the code to consolidate all requirements into a single array. This would streamline the logic, as it would involve working with just one array. Such a consolidation simplifies the code, making it more concise and potentially easier to maintain.
+
 
 ## Installation
 
